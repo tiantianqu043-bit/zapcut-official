@@ -129,25 +129,36 @@ type AnimState = 'idle' | 'merging' | 'revving' | 'launching' | 'cooldown';
         <!-- Waitlist Form Section -->
         <!-- Updated to English text as requested -->
         <div class="flex justify-center mt-10 mb-12 animate-fade-in-up animation-delay-300 relative z-30">
-          <form action="https://formspree.io/f/mvzzgqap" method="POST" class="w-full max-w-md mx-auto">
-  <div class="flex flex-col sm:flex-row gap-2">
-    
-    <input 
-      type="email" 
-      name="email" 
-      required
-      placeholder="Enter your email..." 
-      class="flex-1 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-600 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur-sm transition-all"
-    />
+         <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-1.5 pl-6 rounded-full bg-slate-900/40 border border-slate-700/50 backdrop-blur-md w-full max-w-3xl mx-auto mt-8">
+  
+  <p class="text-slate-200 text-sm md:text-base font-medium whitespace-nowrap mb-2 md:mb-0">
+    Beta launching Jan 18, 2026. Join waitlist for early access.
+  </p>
 
-    <button
-      type="submit"
-      class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-cyan-500/50 transition-all transform hover:-translate-y-0.5"
-    >
-      Join Now
-    </button>
-  </div>
-</form>
+  <form 
+    action="https://formspree.io/f/你的ID" 
+    method="POST" 
+    class="relative w-full md:w-auto"
+  >
+    <div class="relative flex items-center">
+      <input 
+        type="email" 
+        name="email" 
+        required 
+        placeholder="Enter your email" 
+        class="w-full md:w-80 bg-slate-950/60 border border-slate-800 rounded-full py-2.5 pl-5 pr-32 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
+      />
+      
+      <button 
+        type="submit"
+        class="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-5 rounded-full shadow-lg transition-all transform hover:scale-105"
+      >
+        Join Now
+      </button>
+    </div>
+  </form>
+  
+</div>
         </div>
 
         <!-- Subheadline -->
