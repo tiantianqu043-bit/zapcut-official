@@ -129,35 +129,25 @@ type AnimState = 'idle' | 'merging' | 'revving' | 'launching' | 'cooldown';
         <!-- Waitlist Form Section -->
         <!-- Updated to English text as requested -->
         <div class="flex justify-center mt-10 mb-12 animate-fade-in-up animation-delay-300 relative z-30">
-          <form 
-            action="https://formspree.io/f/YOUR_FORM_ID" 
-            method="POST" 
-            class="liquid-glass rounded-3xl md:rounded-full p-2 pl-6 pr-2 md:pl-8 flex flex-col md:flex-row items-center gap-4 md:gap-6 border border-white/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl group hover:border-white/40 transition-colors"
-          >
-            <!-- Waitlist Text -->
-            <label for="waitlist-email" class="text-slate-200 font-medium text-sm md:text-base tracking-wide whitespace-nowrap cursor-pointer hover:text-white transition-colors">
-              Beta launching Jan 18, 2026. Join waitlist for early access.
-            </label>
+          <form action="https://formspree.io/f/mvzzgqap" method="POST" class="w-full max-w-md mx-auto">
+  <div class="flex flex-col sm:flex-row gap-2">
+    
+    <input 
+      type="email" 
+      name="email" 
+      required
+      placeholder="Enter your email..." 
+      class="flex-1 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-600 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur-sm transition-all"
+    />
 
-            <!-- Input & Button Combo -->
-            <div class="flex items-center gap-2 w-full md:w-auto bg-black/30 rounded-full p-1.5 border border-white/10 focus-within:border-cyan-400/50 transition-colors">
-              <input 
-                id="waitlist-email"
-                type="email" 
-                name="email"
-                placeholder="Enter your email" 
-                required
-                class="bg-transparent border-none text-white px-3 py-1.5 w-full md:w-56 placeholder:text-slate-500 focus:ring-0 focus:outline-none text-sm"
-              />
-              
-              <button 
-                type="submit"
-                class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 transform active:scale-95 whitespace-nowrap text-sm"
-              >
-                Join Now
-              </button>
-            </div>
-          </form>
+    <button
+      type="submit"
+      class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-cyan-500/50 transition-all transform hover:-translate-y-0.5"
+    >
+      Join Now
+    </button>
+  </div>
+</form>
         </div>
 
         <!-- Subheadline -->
